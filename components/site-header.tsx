@@ -3,8 +3,6 @@ import { APP_URL } from "@/lib";
 
 const NAV = [
   { href: "/parent-connector", label: "Parent Connector" },
-  { href: "/parent-connector/google-classroom", label: "Classroom integration" },
-  { href: "/privacy", label: "Privacy" },
 ];
 
 export function SiteHeader() {
