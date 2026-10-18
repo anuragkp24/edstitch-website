@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf7;
+  --surface-muted: #efece6;
+  --border-warm: #e4e0d8;
+  --ink: #1b1d22;
+  --ink-2: #33363d;
+  --muted-warm: #4a4d55;
+  --subtle-warm: #5b5e66;
+  --brand: #2f6b5b;
+  --brand-soft: #e3efe9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-muted: var(--surface-muted);
+  --color-border-warm: var(--border-warm);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted-warm: var(--muted-warm);
+  --color-subtle-warm: var(--subtle-warm);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-newsreader);
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+}
+
+/* Long-form pages (integration doc, privacy, terms). */
+.prose-warm h2 {
+  font-family: var(--font-newsreader);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--ink);
+}
+.prose-warm h3 {
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--ink);
+}
+.prose-warm p,
+.prose-warm li {
+  color: var(--muted-warm);
+  line-height: 1.7;
+}
+.prose-warm p { margin: 0 0 1rem; }
+.prose-warm ul { list-style: disc; padding-left: 1.25rem; margin: 0 0 1rem; }
+.prose-warm ol { list-style: decimal; padding-left: 1.25rem; margin: 0 0 1rem; }
+.prose-warm li { margin: 0.25rem 0; }
+.prose-warm a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
+.prose-warm code {
+  font-size: 0.85em;
+  background: var(--surface-muted);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  word-break: break-all;
+}
+.prose-warm table { width: 100%; border-collapse: collapse; margin: 0 0 1.5rem; font-size: 0.925rem; }
+.prose-warm th, .prose-warm td { text-align: left; vertical-align: top; padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--border-warm); }
+.prose-warm th { color: var(--ink); font-weight: 600; }
+.prose-warm td { color: var(--muted-warm); }
