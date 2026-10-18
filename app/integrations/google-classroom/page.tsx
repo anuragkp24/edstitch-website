@@ -18,8 +18,6 @@ const SCOPES: { scope: string; use: string }[] = [
   { scope: "https://www.googleapis.com/auth/classroom.student-submissions.me.readonly", use: "Read the student's own submission state and any score the teacher returned." },
   { scope: "https://www.googleapis.com/auth/classroom.announcements.readonly", use: "Show the latest class announcement on a class page." },
   { scope: "https://www.googleapis.com/auth/classroom.rosters.readonly", use: "Show the teacher's name on a class page (courses.teachers.list)." },
-  { scope: "https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly", use: "Requested but not currently used by any feature." },
-  { scope: "https://www.googleapis.com/auth/classroom.topics.readonly", use: "Requested but not currently used by any feature." },
 ];
 
 const CALLS: { call: string; purpose: string }[] = [
