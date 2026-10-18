@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Screenshot } from "@/components/screenshot";
 import { APP_URL, CONTACT_EMAIL } from "@/lib";
 
 const STEPS = [
@@ -114,20 +113,7 @@ export default function Home() {
       <section className="border-t border-border-warm bg-surface-soft py-14">
         <div className="mx-auto w-full max-w-5xl px-4">
           <h2 className="font-display text-2xl font-medium text-ink">What parents see</h2>
-          <p className="mt-2 text-sm text-subtle-warm">Screenshots use fictional demo data — no real students.</p>
-          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-            <Screenshot
-              src="/screenshots/home.png"
-              alt="Parent Connector home dashboard showing a fictional student's missing and upcoming assignments"
-              caption="Home: what's missing and what's coming up, across every class."
-            />
-            <Screenshot
-              src="/screenshots/class.png"
-              alt="A Parent Connector class page with teacher name, announcements, and assignments"
-              caption="Class page: teacher, latest announcement, and that class's assignments."
-            />
-          </div>
-          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
             {FEATURES.map((f) => (
               <div key={f.title} className="flex flex-col gap-2 rounded-2xl border border-border-warm bg-surface p-5">
                 <p className="font-semibold text-ink">{f.title}</p>

@@ -76,7 +76,7 @@ export default function PrivacyPage() {
 
         <h2>Children and students</h2>
         <p>
-          Parent Connector accounts are for parents and guardians. Students don&apos;t create accounts; they only
+          Parent Connector accounts are for parents. Students don&apos;t create accounts; they only
           authorize read-only access to their own Classroom data through Google. Schools must approve Parent
           Connector before students under 18 can authorize it. Parent Connector supports a parent&apos;s right
           under FERPA to access their child&apos;s education records. If a district uses Parent Connector, we

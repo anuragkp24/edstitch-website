@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/page-header";
-import { Screenshot } from "@/components/screenshot";
 import { APP_URL, CONTACT_EMAIL } from "@/lib";
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export default function ParentConnectorPage() {
       <div className="prose-warm">
         <h2>Who it&apos;s for</h2>
         <p>
-          Parents and guardians of middle and high school students whose schools use Google Classroom.
+          Parents of middle and high school students whose schools use Google Classroom.
           A typical student has six or more classes, each with its own Classroom stream; Parent Connector
           puts all of them in one place for the family.
         </p>
@@ -36,19 +35,6 @@ export default function ParentConnectorPage() {
           <li><strong>Quick questions</strong> — parents can ask &ldquo;What&apos;s missing?&rdquo; or &ldquo;What&apos;s due this week?&rdquo; and get an answer drawn from their child&apos;s Classroom data.</li>
           <li><strong>Multiple children</strong> — connect more than one student and switch between them.</li>
         </ul>
-      </div>
-
-      <div className="my-10 grid grid-cols-1 gap-8">
-        <Screenshot
-          src="/screenshots/home.png"
-          alt="Parent Connector home dashboard with fictional demo data"
-          caption="Home dashboard (fictional demo data)."
-        />
-        <Screenshot
-          src="/screenshots/assignments.png"
-          alt="Parent Connector assignments list filtered by status, with fictional demo data"
-          caption="All assignments across classes, filterable by status (fictional demo data)."
-        />
       </div>
 
       <div className="prose-warm">
