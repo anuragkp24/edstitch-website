@@ -8,6 +8,10 @@ const QUESTIONS = [
     a: "For each child: their classes, assignments, and due dates, and whether work is turned in, missing, or late. You'll also see scores teachers have returned, each class's teacher, and the latest class announcement.",
   },
   {
+    q: "Is it free?",
+    a: "Yes. Parent Connector is free for families.",
+  },
+  {
     q: "Can I disconnect?",
     a: "Yes, anytime, from Settings. Disconnecting a child removes their connection and saved sign-in from Parent Connector.",
   },

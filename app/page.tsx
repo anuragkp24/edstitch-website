@@ -2,7 +2,7 @@ import { BeforeAfter } from "@/components/before-after";
 import { DashboardMockup } from "@/components/dashboard-mockup";
 import { Faq } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
-import { APP_URL, CONTACT_EMAIL } from "@/lib";
+import { APP_URL, ASSEMBLY_CODE_URL, CONTACT_EMAIL } from "@/lib";
 
 const PROBLEMS = [
   {
@@ -59,7 +59,7 @@ export default function Home() {
               Educational software for K-12 families
             </p>
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              See all of your kid&apos;s schoolwork in one place.
+              See all of your kids&apos; schoolwork in one place.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-warm sm:text-xl">
               Parent Connector puts every class and every kid in one simple view, so you always know
@@ -172,6 +172,19 @@ export default function Home() {
           <div className="mt-10">
             <Faq />
           </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-20">
+        <div className="mx-auto w-full max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Free for families.</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-warm">
+            Parent Connector is an Assembly Code project, built with support from{" "}
+            <a href={ASSEMBLY_CODE_URL} className="font-semibold text-brand underline underline-offset-4">
+              Assembly Code
+            </a>
+            , a nonprofit incubator for public-benefit software. Code will be released as open source.
+          </p>
         </div>
       </section>
 
