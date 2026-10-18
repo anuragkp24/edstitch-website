@@ -4,15 +4,15 @@ import { APP_URL } from "@/lib";
 
 const PROBLEMS = [
   {
-    quote: "I found out about the missing assignment weeks later.",
+    title: "I found out about the missing assignment weeks later.",
     body: "By the time a missing grade shows up, it's hard to catch up.",
   },
   {
-    quote: "I check every class, one by one.",
+    title: "I check every class, one by one.",
     body: "Six classes means six separate Google Classroom pages to look through.",
   },
   {
-    quote: "I just want to know how the week is going.",
+    title: "I just want to know how the week is going.",
     body: "There's no single view of what's due, what's done, and what's missing.",
   },
 ];
@@ -27,7 +27,7 @@ const STEPS = [
   },
   {
     title: "Connect Google Classroom",
-    body: "Your child signs in once with their school account. Read-only.",
+    body: "Your child signs in once with their school account.",
     icon: (
       <>
         <path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1" />
@@ -89,12 +89,12 @@ export default function Home() {
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
             {PROBLEMS.map((p) => (
-              <figure key={p.quote} className="flex flex-col gap-3 rounded-3xl bg-background p-7">
-                <blockquote className="font-display text-xl font-medium leading-snug text-ink">
-                  &ldquo;{p.quote}&rdquo;
-                </blockquote>
-                <figcaption className="text-sm leading-relaxed text-muted-warm">{p.body}</figcaption>
-              </figure>
+              <div key={p.title} className="flex flex-col gap-3 rounded-3xl bg-background p-7">
+                <p className="font-display text-xl font-medium leading-snug text-ink">
+                  {p.title}
+                </p>
+                <p className="text-sm leading-relaxed text-muted-warm">{p.body}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -129,29 +129,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      <section className="bg-ink py-12">
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-start gap-5 px-4 sm:px-6 md:flex-row md:items-center md:justify-between">
-          <ul className="flex flex-col gap-3 text-base font-medium text-white sm:flex-row sm:flex-wrap sm:gap-x-8">
-            {["Read-only Google Classroom access", "FERPA-aligned", "Parents can disconnect anytime"].map((t) => (
-              <li key={t} className="flex items-center gap-2.5">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9fd3c3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M5 12.5l4.5 4.5L19 7.5" />
-                </svg>
-                {t}
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-5 text-sm font-semibold text-[#9fd3c3]">
-            <Link href="/parent-connector/google-classroom" className="underline underline-offset-4 hover:text-white">
-              Integration details
-            </Link>
-            <Link href="/privacy" className="underline underline-offset-4 hover:text-white">
-              Privacy policy
-            </Link>
-          </div>
         </div>
       </section>
     </>
