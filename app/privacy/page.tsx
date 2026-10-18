@@ -34,8 +34,8 @@ export default function PrivacyPage() {
           <li>Read-only access to the student&apos;s courses, published coursework, their own submissions (including status and any score the teacher returned), class announcements, and course teacher names.</li>
         </ul>
         <p>
-          The full list of scopes and API calls is in our{" "}
-          <Link href="/parent-connector/google-classroom">Google Classroom integration overview</Link>.
+          More on how Parent Connector connects to Google Classroom is on our{" "}
+          <Link href="/integrations">Integrations</Link> page.
         </p>
 
         <h2>How we use it</h2>

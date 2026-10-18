@@ -69,3 +69,5 @@ body {
 .prose-warm th, .prose-warm td { text-align: left; vertical-align: top; padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--border-warm); }
 .prose-warm th { color: var(--ink); font-weight: 600; }
 .prose-warm td { color: var(--muted-warm); }
+
+html { scroll-behavior: smooth; }

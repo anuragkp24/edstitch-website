@@ -19,11 +19,11 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL("https://edstitch.com"),
   title: {
-    default: "EdStitch — Parent Connector for Google Classroom",
+    default: "EdStitch — Parent Connector: every class, every kid, one place",
     template: "%s — EdStitch",
   },
   description:
-    "EdStitch builds Parent Connector, a read-only dashboard that shows K-12 parents their child's Google Classroom assignments, missing work, and deadlines across every class.",
+    "Parent Connector by EdStitch shows K-12 parents every class and every kid in one place: what's due, what's missing, and what's done.",
 };
 
 export default function RootLayout({

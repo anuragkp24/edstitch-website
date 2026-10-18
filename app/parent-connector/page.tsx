@@ -46,8 +46,8 @@ export default function ParentConnectorPage() {
         </ol>
         <p>
           Students under 18 can only authorize third-party apps their school has approved, so a district
-          admin allowlists Parent Connector first. See the{" "}
-          <Link href="/parent-connector/google-classroom">Google Classroom integration overview</Link> for details.
+          admin allowlists Parent Connector first. See{" "}
+          <Link href="/integrations">Integrations</Link> for details.
         </p>
 
         <h2>What it doesn&apos;t do</h2>

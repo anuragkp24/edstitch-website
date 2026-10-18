@@ -86,9 +86,9 @@ function MultipleKids() {
 
 const FEATURES = [
   { title: "One dashboard, every class", body: "Assignments from all of your child's classes, together in one list.", visual: <EveryClass /> },
+  { title: "All your kids, one account", body: "Connect more than one child and switch between them in a tap.", visual: <MultipleKids /> },
   { title: "Missing work, called out", body: "See what's missing and what's due soon at a glance — before it becomes a problem.", visual: <MissingDueSoon /> },
   { title: "Class pages", body: "Each class shows the teacher, the latest announcement, and what's coming up.", visual: <ClassPage /> },
-  { title: "All your kids, one account", body: "Connect more than one child and switch between them in a tap.", visual: <MultipleKids /> },
 ];
 
 export function FeatureCards() {

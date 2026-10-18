@@ -29,17 +29,16 @@ export function DashboardMockup() {
       <div className="absolute -inset-4 rounded-[2rem] bg-brand-soft sm:-inset-6" />
 
       <div className="relative rounded-3xl border border-border-warm bg-surface p-5 shadow-[0_20px_50px_-20px_rgba(27,29,34,0.25)]">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#4b3fb8] text-sm font-semibold text-white">
-              S
-            </span>
-            <div>
-              <p className="text-sm font-semibold text-ink">Sam&apos;s week</p>
-              <p className="text-xs text-subtle-warm">6 classes</p>
-            </div>
-          </div>
-          <span className="rounded-full bg-surface-muted px-2.5 py-1 text-xs font-medium text-ink-2">This week</span>
+        <div className="flex items-center gap-2">
+          <span className="flex items-center gap-2 rounded-full bg-ink py-1 pl-1 pr-3 text-sm font-semibold text-white">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#4b3fb8] text-xs">S</span>
+            Sam
+          </span>
+          <span className="flex items-center gap-2 rounded-full border border-border-warm py-1 pl-1 pr-3 text-sm font-semibold text-ink-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#b45309] text-xs text-white">J</span>
+            Jordan
+          </span>
+          <span className="ml-auto text-xs font-medium text-subtle-warm">6 classes · this week</span>
         </div>
 
         <div className="mt-4 grid grid-cols-3 gap-2 text-center">

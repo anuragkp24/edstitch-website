@@ -12,8 +12,7 @@ export function SiteFooter() {
           </a>
         </p>
         <nav className="flex flex-wrap gap-x-5 gap-y-2">
-          <Link href="/parent-connector" className="hover:text-ink">Parent Connector</Link>
-          <Link href="/parent-connector/google-classroom" className="hover:text-ink">Google Classroom integration</Link>
+          <Link href="/integrations" className="hover:text-ink">Integrations</Link>
           <Link href="/privacy" className="hover:text-ink">Privacy</Link>
           <Link href="/terms" className="hover:text-ink">Terms</Link>
           <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a>

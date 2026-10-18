@@ -1,21 +1,21 @@
-import Link from "next/link";
 import { BeforeAfter } from "@/components/before-after";
 import { DashboardMockup } from "@/components/dashboard-mockup";
+import { Faq } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
 import { APP_URL, CONTACT_EMAIL } from "@/lib";
 
 const PROBLEMS = [
   {
-    title: "I found out about the missing assignment weeks later.",
-    body: "By the time a missing grade shows up, it's hard to catch up.",
+    title: "You find out about missing work weeks too late.",
+    body: "By the time it shows up on a report card, it's hard to catch up.",
   },
   {
-    title: "I check every class, one by one.",
-    body: "Six classes means six separate Google Classroom pages to look through.",
+    title: "You check every class, one by one.",
+    body: "Six classes means six separate pages to look through, every week.",
   },
   {
-    title: "I just want to know how the week is going.",
-    body: "There's no single view of what's due, what's done, and what's missing.",
+    title: "You're keeping track of more than one kid.",
+    body: "Each child has their own classes and deadlines, and nothing shows them together.",
   },
 ];
 
@@ -28,7 +28,7 @@ const STEPS = [
     ),
   },
   {
-    title: "Connect Google Classroom",
+    title: "Connect their school account",
     body: "Your child signs in once with their school account.",
     icon: (
       <>
@@ -38,8 +38,8 @@ const STEPS = [
     ),
   },
   {
-    title: "See everything in one place",
-    body: "Every class, every assignment, and what's missing.",
+    title: "See every class and every kid",
+    body: "What's due, what's missing, and what's done, all in one place.",
     icon: (
       <>
         <rect x="3.5" y="4" width="17" height="16" rx="2.5" />
@@ -62,16 +62,16 @@ export default function Home() {
               See all of your kid&apos;s schoolwork in one place.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-warm sm:text-xl">
-              Parent Connector brings your child&apos;s Google Classroom assignments, missing work, and
-              deadlines from every class into one simple dashboard.
+              Parent Connector puts every class and every kid in one simple view, so you always know
+              what&apos;s due, what&apos;s missing, and what&apos;s done.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                href="/parent-connector/google-classroom"
+              <a
+                href="#how-it-works"
                 className="flex h-12 items-center rounded-full bg-brand px-6 text-sm font-semibold text-white hover:opacity-90"
               >
-                How it works with Google Classroom
-              </Link>
+                See how it works
+              </a>
               <a
                 href={APP_URL}
                 className="flex h-12 items-center rounded-full border border-ink/15 bg-surface px-6 text-sm font-semibold text-ink hover:border-ink/40"
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-surface py-24">
+      <section id="how-it-works" className="scroll-mt-4 bg-surface py-24">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">How it works</h2>
           <ol className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -162,6 +162,15 @@ export default function Home() {
                 {CONTACT_EMAIL}
               </a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-24">
+        <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Questions parents ask</h2>
+          <div className="mt-10">
+            <Faq />
           </div>
         </div>
       </section>
