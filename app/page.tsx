@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { BeforeAfter } from "@/components/before-after";
 import { DashboardMockup } from "@/components/dashboard-mockup";
-import { APP_URL } from "@/lib";
+import { FeatureCards } from "@/components/feature-cards";
+import { APP_URL, CONTACT_EMAIL } from "@/lib";
 
 const PROBLEMS = [
   {
@@ -97,10 +99,23 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="mt-16 rounded-3xl bg-background p-6 sm:p-10">
+            <BeforeAfter />
+          </div>
         </div>
       </section>
 
       <section className="bg-background py-24">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">What parents see</h2>
+          <p className="mt-3 max-w-xl text-lg text-muted-warm">Everything you need to stay in the loop, nothing you don&apos;t.</p>
+          <div className="mt-12">
+            <FeatureCards />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-24">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">How it works</h2>
           <ol className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -129,6 +144,39 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="bg-background py-24">
+        <div className="mx-auto grid w-full max-w-6xl items-start gap-8 px-4 sm:px-6 md:grid-cols-[1fr_1.4fr]">
+          <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">For schools</h2>
+          <div className="flex flex-col gap-4 text-lg leading-relaxed text-muted-warm">
+            <p>
+              Parent Connector works once your school approves it. The school&apos;s IT team adds it to the
+              list of apps students can use, and then any family in the school can connect.
+            </p>
+            <p>Teachers don&apos;t need to do anything.</p>
+            <p className="text-base">
+              Want it at your school?{" "}
+              <a href={`mailto:${CONTACT_EMAIL}`} className="font-semibold text-brand underline underline-offset-4">
+                {CONTACT_EMAIL}
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-brand py-24">
+        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-8 px-4 text-center sm:px-6">
+          <h2 className="font-display text-4xl font-medium leading-tight text-white sm:text-5xl">
+            Know what&apos;s due before it&apos;s late.
+          </h2>
+          <a
+            href={APP_URL}
+            className="flex h-12 items-center rounded-full bg-white px-7 text-sm font-semibold text-ink hover:bg-background"
+          >
+            Try the app
+          </a>
         </div>
       </section>
     </>

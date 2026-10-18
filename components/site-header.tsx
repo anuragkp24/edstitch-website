@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { APP_URL } from "@/lib";
 
-const NAV = [
-  { href: "/parent-connector", label: "Parent Connector" },
-];
-
 export function SiteHeader() {
   return (
     <header className="bg-background">
@@ -15,21 +11,12 @@ export function SiteHeader() {
           </span>
           <span className="font-display text-xl font-semibold tracking-tight text-ink">EdStitch</span>
         </Link>
-        <div className="flex items-center gap-6">
-          <nav className="hidden gap-6 text-sm font-medium text-ink-2 md:flex">
-            {NAV.map((item) => (
-              <Link key={item.href} href={item.href} className="hover:text-ink">
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <a
-            href={APP_URL}
-            className="flex h-9 items-center rounded-full bg-ink px-4 text-sm font-semibold text-background hover:bg-ink-2"
-          >
-            Try the app
-          </a>
-        </div>
+        <a
+          href={APP_URL}
+          className="flex h-9 items-center rounded-full bg-ink px-4 text-sm font-semibold text-background hover:bg-ink-2"
+        >
+          Try the app
+        </a>
       </div>
     </header>
   );
