@@ -1,5 +1,5 @@
 import { BeforeAfter } from "@/components/before-after";
-import { DashboardMockup } from "@/components/dashboard-mockup";
+import { HomeMockup } from "@/components/home-mockup";
 import { Faq } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
 import { APP_URL, ASSEMBLY_CODE_URL, CONTACT_EMAIL } from "@/lib";
@@ -56,14 +56,14 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-4 pb-24 pt-12 sm:px-6 sm:pt-20 lg:grid-cols-[1.05fr_1fr] lg:pb-32">
           <div className="flex flex-col gap-7">
             <p className="text-sm font-semibold uppercase tracking-wider text-brand">
-              Educational software for K-12 families
+              A weekly check-in for K-12 families
             </p>
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              See all of your kids&apos; schoolwork in one place.
+              Know what to ask your kid about this week.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-warm sm:text-xl">
-              Parent Connector puts every class and every kid in one simple view, so you always know
-              what&apos;s due, what&apos;s missing, and what&apos;s done.
+              Parent Connector reads your child&apos;s Google Classroom and gives you one calm weekly
+              check-in: what&apos;s missing, what&apos;s due, and the one thing worth a conversation.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -80,7 +80,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <DashboardMockup />
+          <HomeMockup />
         </div>
       </section>
 
