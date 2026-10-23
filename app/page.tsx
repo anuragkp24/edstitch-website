@@ -1,5 +1,6 @@
 import { BeforeAfter } from "@/components/before-after";
 import { HomeMockup } from "@/components/home-mockup";
+import { MonthMockup } from "@/components/month-mockup";
 import { Faq } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
 import { APP_URL, ASSEMBLY_CODE_URL, CONTACT_EMAIL } from "@/lib";
@@ -115,7 +116,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" className="scroll-mt-4 bg-surface py-24">
+      <section className="bg-surface py-24">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr]">
+          <div className="flex flex-col gap-5">
+            <h2 className="font-display text-3xl font-medium leading-tight text-ink sm:text-4xl">
+              The whole month, at a glance.
+            </h2>
+            <p className="max-w-md text-lg leading-relaxed text-muted-warm">
+              Every day is the same size, with what&apos;s due on it, and a check mark once it&apos;s turned in.
+              Tap a day to see everything due, or page forward and back to plan ahead and look back.
+            </p>
+          </div>
+          <MonthMockup />
+        </div>
+      </section>
+
+      <section id="how-it-works" className="scroll-mt-4 bg-background py-24">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">How it works</h2>
           <ol className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -147,7 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background py-24">
+      <section className="bg-surface py-24">
         <div className="mx-auto grid w-full max-w-6xl items-start gap-8 px-4 sm:px-6 md:grid-cols-[1fr_1.4fr]">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">For schools</h2>
           <div className="flex flex-col gap-4 text-lg leading-relaxed text-muted-warm">
@@ -166,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-surface py-24">
+      <section className="bg-background py-24">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Questions parents ask</h2>
           <div className="mt-10">
@@ -175,7 +191,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background py-20">
+      <section className="bg-surface py-20">
         <div className="mx-auto w-full max-w-3xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Free for families.</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-warm">
