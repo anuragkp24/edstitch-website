@@ -1,5 +1,6 @@
 import { BeforeAfter } from "@/components/before-after";
-import { DashboardMockup } from "@/components/dashboard-mockup";
+import { HomeMockup } from "@/components/home-mockup";
+import { MonthMockup } from "@/components/month-mockup";
 import { Faq } from "@/components/faq";
 import { FeatureCards } from "@/components/feature-cards";
 import { APP_URL, ASSEMBLY_CODE_URL, CONTACT_EMAIL } from "@/lib";
@@ -56,14 +57,14 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-4 pb-24 pt-12 sm:px-6 sm:pt-20 lg:grid-cols-[1.05fr_1fr] lg:pb-32">
           <div className="flex flex-col gap-7">
             <p className="text-sm font-semibold uppercase tracking-wider text-brand">
-              Educational software for K-12 families
+              A weekly check-in for K-12 families
             </p>
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              See all of your kids&apos; schoolwork in one place.
+              Every class. Every kid. One calm check-in.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-warm sm:text-xl">
-              Parent Connector puts every class and every kid in one simple view, so you always know
-              what&apos;s due, what&apos;s missing, and what&apos;s done.
+              Parent Connector reads your child&apos;s Google Classroom and gives you one calm weekly
+              check-in: what&apos;s missing, what&apos;s due, and the one thing worth a conversation.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -80,7 +81,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <DashboardMockup />
+          <HomeMockup />
         </div>
       </section>
 
@@ -115,7 +116,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" className="scroll-mt-4 bg-surface py-24">
+      <section className="bg-surface py-24">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr]">
+          <div className="flex flex-col gap-5">
+            <h2 className="font-display text-3xl font-medium leading-tight text-ink sm:text-4xl">
+              The whole month, at a glance.
+            </h2>
+            <p className="max-w-md text-lg leading-relaxed text-muted-warm">
+              Every day is the same size, with what&apos;s due on it, and a check mark once it&apos;s turned in.
+              Tap a day to see everything due, or page forward and back to plan ahead and look back.
+            </p>
+          </div>
+          <MonthMockup />
+        </div>
+      </section>
+
+      <section id="how-it-works" className="scroll-mt-4 bg-background py-24">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">How it works</h2>
           <ol className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -147,7 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background py-24">
+      <section className="bg-surface py-24">
         <div className="mx-auto grid w-full max-w-6xl items-start gap-8 px-4 sm:px-6 md:grid-cols-[1fr_1.4fr]">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">For schools</h2>
           <div className="flex flex-col gap-4 text-lg leading-relaxed text-muted-warm">
@@ -166,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-surface py-24">
+      <section className="bg-background py-24">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Questions parents ask</h2>
           <div className="mt-10">
@@ -175,7 +191,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-background py-20">
+      <section className="bg-surface py-20">
         <div className="mx-auto w-full max-w-3xl px-4 text-center sm:px-6">
           <h2 className="font-display text-3xl font-medium text-ink sm:text-4xl">Free for families.</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-warm">
