@@ -60,7 +60,7 @@ export default function Home() {
               A weekly check-in for K-12 families
             </p>
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              Know what to ask your kid about this week.
+              Every class. Every kid. One calm check-in.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-warm sm:text-xl">
               Parent Connector reads your child&apos;s Google Classroom and gives you one calm weekly
