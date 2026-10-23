@@ -74,13 +74,36 @@ export function HomeMockup() {
         </div>
       </div>
 
-      <div className="absolute -bottom-14 -left-2 hidden w-56 rounded-2xl border border-border-warm bg-surface p-3 shadow-[0_12px_30px_-12px_rgba(27,29,34,0.3)] sm:block lg:-left-12">
-        <div className="h-20 overflow-hidden rounded-lg border border-border-warm bg-background p-2">
-          <div className="h-1.5 w-1/2 rounded-full bg-ink/20" />
-          <div className="mt-1.5 h-1.5 w-full rounded-full bg-ink/10" />
-          <div className="mt-1.5 h-1.5 w-5/6 rounded-full bg-ink/10" />
-          <div className="mt-1.5 h-1.5 w-full rounded-full bg-ink/10" />
-          <div className="mt-1.5 h-1.5 w-2/3 rounded-full bg-ink/10" />
+      <div className="absolute -bottom-14 -right-2 hidden w-56 rounded-2xl border border-border-warm bg-surface p-3 shadow-[0_12px_30px_-12px_rgba(27,29,34,0.3)] sm:block lg:-right-10">
+        <div className="overflow-hidden rounded-lg border border-border-warm bg-white">
+          <svg viewBox="0 0 200 104" className="block h-auto w-full" role="presentation">
+            {/* cell wall and membrane */}
+            <rect x="8" y="8" width="132" height="88" rx="14" fill="#f3f7ee" stroke="#2f6b5b" strokeWidth="3" />
+            <rect x="13" y="13" width="122" height="78" rx="11" fill="none" stroke="#9bbfa9" strokeWidth="1.2" />
+            {/* central vacuole */}
+            <ellipse cx="62" cy="52" rx="34" ry="28" fill="#dcebf5" stroke="#7aa6c4" strokeWidth="1.5" />
+            {/* nucleus */}
+            <circle cx="112" cy="34" r="15" fill="#e8dcf2" stroke="#8a6bb0" strokeWidth="1.5" />
+            <circle cx="112" cy="34" r="5" fill="#8a6bb0" />
+            {/* chloroplasts */}
+            <ellipse cx="30" cy="30" rx="9" ry="5" fill="#6fae6a" stroke="#2f6b5b" strokeWidth="1" transform="rotate(-20 30 30)" />
+            <ellipse cx="28" cy="76" rx="9" ry="5" fill="#6fae6a" stroke="#2f6b5b" strokeWidth="1" transform="rotate(15 28 76)" />
+            <ellipse cx="104" cy="78" rx="9" ry="5" fill="#6fae6a" stroke="#2f6b5b" strokeWidth="1" transform="rotate(-10 104 78)" />
+            {/* mitochondria */}
+            <ellipse cx="122" cy="62" rx="7" ry="4" fill="#f4c6a0" stroke="#c0713a" strokeWidth="1" transform="rotate(30 122 62)" />
+            <ellipse cx="72" cy="88" rx="7" ry="3.5" fill="#f4c6a0" stroke="#c0713a" strokeWidth="1" />
+            {/* labels */}
+            <g fontSize="8" fill="#33363d" fontFamily="sans-serif">
+              <line x1="140" y1="34" x2="150" y2="34" stroke="#8a6bb0" strokeWidth="1" />
+              <text x="152" y="37">nucleus</text>
+              <line x1="96" y1="52" x2="150" y2="52" stroke="#7aa6c4" strokeWidth="1" />
+              <text x="152" y="55">vacuole</text>
+              <line x1="112" y1="78" x2="150" y2="72" stroke="#2f6b5b" strokeWidth="1" />
+              <text x="152" y="75">chloroplast</text>
+              <line x1="129" y1="64" x2="150" y2="92" stroke="#c0713a" strokeWidth="1" />
+              <text x="152" y="95">mitochondria</text>
+            </g>
+          </svg>
         </div>
         <p className="mt-2 text-sm font-semibold text-ink">Plant cell diagram</p>
         <p className="text-xs text-subtle-warm">
